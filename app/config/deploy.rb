@@ -1,6 +1,6 @@
 set :application, "captcha_fix_capifony"
-set :domain,      "captchacapifony.byethost3.com"
-set :deploy_to,   "/var/www"
+set :domain,      "10.30.0.4:30000"
+set :deploy_to,   "/var/www/captcha_fix_capifony"
 set :app_path,    "app"
 
 set :repository,  "https://github.com/shudanti/symfony_fix_capifony.git"
@@ -15,6 +15,6 @@ role :app,        domain, :primary => true       # This may be the same as your 
 
 set :deploy_via, :remote_cache
 set  :keep_releases,  3
-set :user, "le-ba-tien"
+set :user, "root"
 # Be more verbose by uncommenting the following line
 # logger.level = Logger::MAX_LEVEL
