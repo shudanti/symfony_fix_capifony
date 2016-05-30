@@ -18,3 +18,5 @@ set  :keep_releases,  3
 set :user, "root"
 # Be more verbose by uncommenting the following line
 # logger.level = Logger::MAX_LEVEL
+set :use_sudo, true
+default_run_options[:pty] = true
