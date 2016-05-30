@@ -20,3 +20,5 @@ set :user, "root"
 # logger.level = Logger::MAX_LEVEL
 set :use_sudo, true
 default_run_options[:pty] = true
+
+set :writable_dirs, ["var/cache", "var/logs", "var/sessions"]
